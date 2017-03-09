@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 
 > A personal website to showcase my work
 
