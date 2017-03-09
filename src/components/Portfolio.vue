@@ -1,65 +1,48 @@
 <template>
-  <div>
+  <div class="body-area container">
+    <div class="content">
     <section class="hero">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">
-            Current Work
+          <h1 class="about">
+            PROJECTS
           </h1>
-          <div class="content">
-            <a href="">
-              <h4 class="subtitle">
-                GlamUp
-              </h4>
-              <figure class="image is-128x128">
-                <img src="https://s-media-cache-ak0.pinimg.com/736x/f2/ac/50/f2ac503f971dd2888d7ccb1079f0dfb5.jpg">
-                <figcaption> React, React-Native, Firebase </figcaption>
-              </figure>
-            </a>
-            <p>Mobile app that tells you everything about the latest makeup products</p>
+          <div class="columns">
+            <div class="column">
+              <a href="https://github.com/varna-vincent/NumberSense" target="_blank">
+                <h2 class="project-title">Number Sense</h2>
+                <figure class="image is-128x128">
+                  <img src="http://www.publicdomainpictures.net/pictures/170000/velka/little-boy-with-abacus-1463679162k8p.jpg">
+                  <figcaption> Vue, SVG, HTML5 </figcaption>
+                </figure>
+              </a>
+              <p>Interactive game to help develop <br/> your number sense</p>
+            </div>
+            <div class="column">
+              <a href="https://github.com/varna-vincent/NumberSense" target="_blank">
+                <h2 class="project-title">GlamUp</h2>
+                <figure class="image is-128x128">
+                  <img src="https://s-media-cache-ak0.pinimg.com/736x/f2/ac/50/f2ac503f971dd2888d7ccb1079f0dfb5.jpg">
+                  <figcaption> React-Native, Firebase </figcaption>
+                </figure>
+              </a>
+              <p>Mobile app that tells you everything about <br/> the latest makeup products</p>
+            </div>
+            <div class="column">
+              <a href="https://github.com/varna-vincent/NumberSense" target="_blank">
+                <h2 class="project-title">XML to Pojo</h2>
+                <figure class="image is-128x128">
+                  <img src="https://static.pexels.com/photos/207580/pexels-photo-207580.jpeg">
+                  <figcaption> Java, Bootstrap </figcaption>
+                </figure>
+              </a>
+              <p>A tool to generate Pojo classes from XML</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Previous Work
-          </h1>
-          <ul>
-            <li>
-              <div class="content">
-                <a href="https://github.com/varna-vincent/NumberSense">
-                  <h4 class="subtitle">
-                    Number Sense
-                  </h4>
-                  <figure class="image is-128x128">
-                    <img src="http://www.publicdomainpictures.net/pictures/170000/velka/little-boy-with-abacus-1463679162k8p.jpg">
-                    <figcaption> Vue, SVG, HTML5, Bulma </figcaption>
-                  </figure>
-                </a>
-                <p>Interactive game to help develop your number sense</p>
-              </div>
-            </li>
-            <li>
-              <div class="content">
-                <a href="">
-                  <h4 class="subtitle">
-                    XML to Pojo
-                  </h4>
-                  <figure class="image is-128x128">
-                    <img src="https://static.pexels.com/photos/207580/pexels-photo-207580.jpeg">
-                    <figcaption> Java, XML, Bootstrap </figcaption>
-                  </figure>
-                </a>
-                <p>A tool to generate Pojo classes from XML</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    </div>
   </div>
 </template>
 
@@ -76,7 +59,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2, h4 {
+
+.about {
+  color: #0CA5B0;
+  font-family: 'Quicksand';
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 70px;
+  letter-spacing: 0px;
+  margin-bottom: 50px;
+}
+
+h1, h2, h4, .project-title {
+  color: #4E3F30;
+  font-family: 'Lato';
   font-weight: normal;
 }
 
@@ -90,8 +86,14 @@ li {
   margin: 0 10px;
 }
 
-a, a:hover {
-  color: #42b983;
+p {
+  color: #4E3F30;
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  text-indent: 36px;
+  word-wrap: break-word;
 }
 
 figure {
@@ -99,11 +101,13 @@ figure {
 }
 
 img {
-  border-radius: 40px;
+  border-radius: 120px;
+  border: 12px solid #EEE;
 }
 
-.subtitle {
-  color: #7588a5;
+a, a:hover {
+  color: #0CA5B0; 
+  text-decoration: none;
 }
 </style>
 
