@@ -7,7 +7,12 @@
             <h1 class="size-title"><strong>VARNA</strong> VINCENT</h1>
           </router-link>
         </div>
-        <div class="nav-right nav-menu">
+        <span class="nav-toggle" @click="toggleMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+        <div class="nav-right nav-menu" :class="{ 'is-active': showMenu }" @click="toggleMenu">
           <router-link class="nav-item" to="/portfolio" exact>PORTFOLIO</router-link>
           <router-link class="nav-item" to="/resume" exact>RESUME</router-link>
           <router-link class="nav-item" to="/blog" exact>BLOG</router-link>
@@ -33,7 +38,17 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  data () {
+    return {
+      showMenu: false
+    }
+  },
+  methods: {
+    toggleMenu: function () {
+      this.showMenu = !this.showMenu
+    }
+  }
 }
 </script>
 

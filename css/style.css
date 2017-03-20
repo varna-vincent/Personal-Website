@@ -1,0 +1,47 @@
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 5px;
+}
+
+.body-area {
+  padding: 0px;
+  margin: 0px;
+  width: 100vw;
+  height: 80vh;
+  text-align: center;
+}
+
+nav {
+  border-bottom: 1px solid #EEE;
+  margin-bottom: 10px;
+}
+
+.size-title {
+  font-size: 1.2em;
+  font-family: 'Quicksand';
+  color: #4E3F30;
+  letter-spacing: 2px;
+}
+
+h1 {
+  color: #4E3F30;
+  font-family: 'Quicksand';
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 0px;
+  margin-bottom: 36px;
+}
+
+.router-link-active {
+  color: #0CA5B0;
+  font-weight: bolder;
+}
+
+.copyrights {
+  color: #AAA;
+}
