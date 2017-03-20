@@ -9,7 +9,7 @@
           </h1>
           <div class="columns">
             <div class="column">
-              <a href="https://github.com/varna-vincent/NumberSense" target="_blank">
+              <a href="https://number-sense.herokuapp.com" target="_blank">
                 <h2 class="project-title">Number Sense</h2>
                 <figure class="image is-128x128">
                   <img src="http://www.publicdomainpictures.net/pictures/170000/velka/little-boy-with-abacus-1463679162k8p.jpg">
@@ -70,20 +70,10 @@ export default {
   margin-bottom: 50px;
 }
 
-h1, h2, h4, .project-title {
+h1, h2, .project-title {
   color: #4E3F30;
   font-family: 'Lato';
   font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
 }
 
 p {

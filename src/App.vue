@@ -3,25 +3,15 @@
     <nav class="nav">
       <div class="container">
         <div class="nav-left">
-          <router-link class="nav-item" to="/me" exact><h1 class="size-title"><strong>VARNA</strong> VINCENT</h1></router-link>
+          <router-link class="nav-item" to="/" exact>
+            <h1 class="size-title"><strong>VARNA</strong> VINCENT</h1>
+          </router-link>
         </div>
-
-        <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-        <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" 
-        <span class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>-->
-
-        <!-- This "nav-menu" is hidden on mobile -->
-        <!-- Add the modifier "is-active" to display it on mobile -->
         <div class="nav-right nav-menu">
           <router-link class="nav-item" to="/portfolio" exact>PORTFOLIO</router-link>
           <router-link class="nav-item" to="/resume" exact>RESUME</router-link>
           <router-link class="nav-item" to="/blog" exact>BLOG</router-link>
         </div>
-
       </div>
     </nav>
 
@@ -35,6 +25,7 @@
           <a class="icon" href="https://www.linkedin.com/in/varna-vincent-5b763541" target="_blank"><i class="fa fa-linkedin"></i></a>
           <a class="icon" href="https://www.pinterest.com/varnamvmv/" target="_blank"><i class="fa fa-pinterest"></i></a>
         </p>
+        <h6 class="is-small copyrights">Designed and developed by Varna Vincent</h6>
       </footer>
     </div>
   </div>
@@ -89,5 +80,9 @@ h1 {
 .router-link-active {
   color: #0CA5B0;
   font-weight: bolder;
+}
+
+.copyrights {
+  color: #AAA;
 }
 </style>

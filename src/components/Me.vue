@@ -12,12 +12,7 @@
 
 <script>
 export default {
-  name: 'me',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
+  name: 'me'
 }
 </script>
 
@@ -60,10 +55,6 @@ figure {
 img {
   border-radius: 120px;
   border: 12px solid #EEE;
-}
-
-.subtitle {
-  color: #7588a5;
 }
 </style>
 
